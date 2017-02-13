@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='gameStatsApp'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <!--bootstrap-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- Angular 1.5.7 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+
+      <!--UI Router-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+      <!--font-->
+      <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <h1>GameStats</h1>
+    </div>
+    <ul class="nav nav-pills">
+      <li role="presentation"><a ui-sref="players">Players</a></li>
+      <li role="presentation"><a ui-sref="stats">Stats</a></li>
+      <li role="presentation"><a ui-sref="home">Home</a></li>
+    </ul>
+  </nav>
+  <div class="info container">
+    <div ui-view></div>
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+          <h1>GameStats</h1>
+        </div>
+      </nav>
+    </div>
+    <link rel="stylesheet" href="./styles.css">
+    <script src='./app.js'></script>
+    <script src='./controllers/inputController.js'></script>
+    <script src='./controllers/statController.js'></script>
+    <script src='./services/playerService.js'></script>
+</body>
+</html>

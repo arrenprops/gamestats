@@ -1,0 +1,101 @@
+<div class="totalStats row">
+  <div class=" col-sm-12">
+    <label>Show Total Stats <input type="checkbox" ng-model="checked7" ng-init="checked7=true" /></label><br/>
+    <span ng-if="checked7" class="animate-if">
+      
+    <ul class='totals'>
+      <li>Total Kills:
+        <span>{{totalKills}} </span>
+    </li>
+    <li>Total Deaths
+      <span>{{totalDeaths}} </span>
+    </li>
+    <li>Total Wins:
+      <span>{{totalWins}} </span>
+    </li>
+    <li>Total Losses:
+      <span>{{totalLosses}} </span>
+    </li>
+    <li>Total Assists:
+      <span> {{totalAssists}}</span>
+    </li>
+    <li>Total Healing:
+      <span> {{totalHealing}}</span>
+    </li>
+    <li>Total Damage:
+      <span> {{totalDamage}}</span>
+    </li>
+    <li>Total Objective Kills:
+      <span> {{totalObjectiveKills}}</span>
+    </li>
+    </ul>
+  </div>
+  </span>
+
+  <div class="col-sm-12">
+    <label>Show Average Stats <input type="checkbox" ng-model="checked2" ng-init="checked2=true" /></label><br/>
+    <span ng-if="checked2" class="animate-if">
+    
+      <ul class='average'>
+      <li>Average Kills:
+        <span>{{(averageKills)| number: 2}} </span>
+    </li>
+    <li>Average Deaths
+      <span>{{(averageDeaths)| number: 2}} </span>
+    </li>
+    <li>Average Wins:
+      <span>{{(averageWins)| number: 2}} </span>
+    </li>
+    <li>Average Losses:
+      <span>{{averageLosses| number: 2}} </span>
+    </li>
+    <li>Average Assists:
+      <span> {{averageAssists| number: 2}}</span>
+    </li>
+    <li>Average Healing:
+      <span> {{averageHealing| number: 2}}</span>
+    </li>
+    <li>Average Damage:
+      <span> {{averageDamage| number: 2}}</span>
+    </li>
+    <li>Average Objective Kills:
+      <span> {{averageObjectiveKills | number: 2}}</span>
+    </li>
+    </ul>
+  </div>
+  </span>
+
+  <div class=" col-sm-12">
+    <label>Show Most Stats <input type="checkbox" ng-model="checked4" ng-init="checked4=true" /></label><br/>
+    <span ng-if="checked4" class="animate-if">
+      
+    <ul class='totals'>
+      <li>Most Kills:
+        <span>{{mostKills[0].name}} </span>
+    </li>
+    <li>Most Deaths
+      <span>{{mostDeaths[0].name}} </span>
+    </li>
+    <li>Most Wins:
+      <span>{{mostWins[0].name}} </span>
+    </li>
+    <li>Most Losses:
+      <span>{{mostLosses[0].name}} </span>
+    </li>
+    <li>Most Assists:
+      <span> {{mostAssists[0].name}}</span>
+    </li>
+    <li>Most Healing:
+      <span> {{mostHealing[0].name}}</span>
+    </li>
+    <li>Most Damage:
+      <span> {{mostDamage[0].name}}</span>
+    </li>
+    <li>Most Objective Kills:
+      <span> {{mostObjectiveKills[0].name}}</span>
+    </li>
+    </ul>
+  </div>
+  </span>
+  <!--totalStats-->
+</div>

@@ -1,0 +1,36 @@
+<div class="userInput row">
+  <div class="form-group col-sm-6">
+    <h1>Log In To Compare Stats!</h1>
+
+    <ul>
+      <li><label for="firstName">First Name <input type="text" ng-model='firstName' placeholder="First Name" ></label></li>
+      <li><label for="lastName">Last Name <input type="text" ng-model='lastName' placeholder="Last Name"></label></li>
+      <li><label for="email">E-mail <input type="text" ng-model='email' placeholder="Email"></label></li>
+      <button class='btn btn-lg pull-right' ng-click='submitPlayer()'>Add Player</button>
+      </ul>
+  </div>
+  <div class="form-group  col-sm-6 inputBox">
+    <h1>Choose Player</h1>
+    <select class="form-control playerSelect" ng-model='selectedItem' ng-change='playerSelect()'>
+      <option ng-repeat='player in players'value="{{player.email}}">{{player.firstName}} {{player.lastName}} {{player.email}}</option>
+        </select>
+
+    <ul>
+      <li><label for="kills">Kills <input type="text" ng-model='kills' placeholder="Total Kills" ></label></li>
+      <li><label for="deaths">Deaths <input type="text" ng-model='deaths' placeholder="Total Deaths"></label></li>
+      <li><label for="wins">Wins <input type="text" ng-model='wins' placeholder="Total Wins"></label></li>
+      <li><label for="losses">Losses <input type="text" ng-model='losses' placeholder="Total Losses"></label></li>
+
+      <li><label for="assists">Assists <input type="text" ng-model='assists' placeholder="Total Assists"></label></li>
+      <li><label for="healing">Healing <input type="text" ng-model='healing' placeholder="Total Healing"></label></li>
+      <li><label for="damage">Damage <input type="text" ng-model='damage' placeholder="Total Damage"></label></li>
+      <li><label for="objectiveKills">Objective Kills <input type="text" ng-model='objectiveKills' placeholder="Total Objective Kills"></label></li>
+    </ul>
+
+    
+    <button class='btn btn-lg pull-right' ng-click='addStatsToPlayer()' >Add Stats To Player</button>
+    
+
+  </div>
+  <!--userInput-->
+</div>

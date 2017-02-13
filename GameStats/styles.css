@@ -1,0 +1,113 @@
+.nav li{
+  float: right;
+  margin-top: -39px;
+   
+}
+.nav{
+  background-color: black;
+}
+.navbar h1{
+  color: white;
+   
+  
+}
+
+.nav a{
+  color: white;
+   
+}
+.stats li{
+  list-style: none;
+  text-align: center;
+   
+}
+.stats ul{
+  background-color: blanchedalmond;
+  margin-top: -10px;
+  padding: 17px;
+  font-size: 30px;
+   
+}
+.totalStats ul span{
+  background-color: white;
+  border: 1px solid black;
+   
+}
+.totalStats {
+  font-size: medium;   
+}
+
+#deletePlayer{
+  margin-left: 10px;
+}
+
+.stats span{
+  background-color: white;  
+}
+.playerBoxes {
+  font-size: medium;
+  background-image:url('http://www.shximai.com/data/out/188/66825931-subtle-wallpapers.jpg');
+   
+}
+.searchRow{
+  font-size: 30px;
+  background-image:url('http://www.shximai.com/data/out/188/66825931-subtle-wallpapers.jpg');
+  text-align: center;
+  padding-top: 40px;
+   
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: darkblue;
+   
+}
+
+.playerBoxes h1{
+  background-color: black;
+  color: white;
+  padding: 20px;
+    text-align: center;
+     
+}
+#navbarList{
+  float: right;
+}
+.userInput{
+  background-image:url('http://www.shximai.com/data/out/188/66825931-subtle-wallpapers.jpg');
+  padding: 95px;
+      margin-top: -25px;
+  padding-bottom: 276px;    
+  text-align: right;
+   
+}
+.userInput label{
+text-align: left;
+}
+li{
+  list-style: none;
+   
+}
+.totalStats{
+  background-image:url('http://www.shximai.com/data/out/188/66825931-subtle-wallpapers.jpg');
+      padding: 1px;
+      font-size: 30px;
+       
+}
+.totalStats li{
+  text-align: center;
+}
+.totals{
+  border: none;
+}
+.navbar{
+  background-color: black;
+}
+body { padding-bottom: 70px;
+padding-top: 80px;
+ 
+font-size: 20px;
+ }
+ 
+ .playerSelect{
+   margin-bottom: 30px;
+ }
+ 

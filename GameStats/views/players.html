@@ -1,0 +1,61 @@
+ <div class="searchRow row">
+          <input type="text" id='searchRowBox' ng-model='searchBox' placeholder='Search For Players'>
+          </span>
+    </div>
+
+    <div class="playerBoxes row">
+      <label>Show Player Stats <input type="checkbox" ng-model="checked3" ng-init="checked3=true" /></label><br/>
+        <span ng-if="checked3" class="animate-if">   
+      <div class='col-xs-6 stats' ng-repeat='player in players | filter: searchBox'>
+        
+          <h1>{{player.firstName + ' ' + player.lastName}}</h1>
+         <ul>
+        <li>Email:
+          <span>{{player.email}}</span>
+        </li>
+        <li>Player number:
+          <span>{{$scope.indexNum = $index+1}}</span>
+        </li>
+        <li>Games Played:
+          <span>{{player.gameNum}}</span>
+        </li>
+        <li>Kills:
+          <span>{{player.kills}} </span>
+        </li>
+        <li>Deaths
+          <span>{{player.deaths}} </span>
+        </li>
+        <li>Wins:
+          <span>{{player.wins}} </span>
+        </li>
+        <li>Losses:
+          <span>{{player.losses}} </span>
+        </li>
+        <li>Assists:
+          <span> {{player.assists}}</span>
+        </li>
+        <li>Healing:
+          <span> {{player.healing}}</span>
+        </li>
+        <li>Damage:
+          <span> {{player.damage}}</span>
+        </li>
+        <li>Objective Kills:
+          <span> {{player.objectiveKills}}</span>
+        </li>
+        <li id='trophyBox'>
+           
+          <span class='trophyBox' ng-if='player.kills >= mostKills[0].score && mostKills[0].score > 0'>Most Kills</span>
+          <span class='trophyBox' ng-if='player.deaths >= mostDeaths[0].score && mostDeaths[0].score > 0'>Most Deaths</span>
+          <span class='trophyBox' ng-if='player.wins >= mostWins[0].score && mostKills[0].score > 0' >Most Wins</span>
+          <span class='trophyBox' ng-if='player.losses >= mostLosses[0].score && mostKills[0].score > 0'>Most Losses</span>
+          <span class='trophyBox' ng-if='player.assists >= mostAssists[0].score && mostKills[0].score > 0'>Most Assists</span>
+          <span class='trophyBox' ng-if='player.healing >= mostHealing[0].score && mostKills[0].score > 0'>Most Healing</span>
+          <span class='trophyBox' ng-if='player.damage >= mostDamage[0].score && mostKills[0].score > 0'>Most Damage</span>
+          <span class='trophyBox' ng-if='player.objectiveKills >= mostObjectiveKills[0].score && mostKills[0].score > 0'>Most Objective Kills</span>
+        
+        </li>
+        </ul>
+      </div>
+      </span>
+    </div>
